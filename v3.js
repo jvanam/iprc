@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	let mobileNav = document.getElementById("mobile-nav");
 	console.log(mobileNavToggleButton);
 	console.log(mobileNav);
+	mobileNav.style.display = "none";
 	mobileNavToggleButton.addEventListener("click", () => {
 		if (mobileNavShowing) {
 			mobileNav.style.display = "none";
