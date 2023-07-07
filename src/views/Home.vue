@@ -28,21 +28,58 @@ console.log(document, state, error, refresh);
 #home-wrapper {
 	display: flex;
 	justify-content: center;
-	padding: 30px 50px 30px 50px;
 }
-/* #home-content {
-	max-width: 1000px;
-} */
 #home-row2 {
 	display: grid;
-	gap: 50px;
-	grid-template-columns: 3fr 4fr;
-	margin-top: 60px;
 }
-#home-hero-img {
-	width: 100%;
+/* MIN */
+@media only screen and (max-width: 800px) {
+	#home-wrapper {
+		padding: 15px;
+	}
+	#home-row2 {
+		gap: 20px;
+		margin-top: 30px;
+	}
+	#home-subheader {
+		margin-top: 0px;
+	}
+	#home-hero-img {
+		width: 70%;
+	}
 }
-#home-subheader {
-	margin-top: 50px;
+/* MID */
+@media only screen and (min-width: 801px) and (max-width: 1100px) {
+	#home-wrapper {
+		padding: 30px;
+	}
+	#home-row2 {
+		gap: 50px;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 60px;
+	}
+	#home-subheader {
+		margin-top: 0px;
+	}
+	#home-hero-img {
+		width: 100%;
+	}
+}
+/* MAX */
+@media only screen and (min-width: 1101px) {
+	#home-wrapper {
+		padding: 30px 50px 30px 50px;
+	}
+	#home-row2 {
+		gap: 50px;
+		grid-template-columns: 3fr 4fr;
+		margin-top: 60px;
+	}
+	#home-subheader {
+		margin-top: 50px;
+	}
+	#home-hero-img {
+		width: 100%;
+	}
 }
 </style>

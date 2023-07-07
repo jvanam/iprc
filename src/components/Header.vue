@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from "vue";
+import FullPageNav from "/src/components/FullPageNav.vue";
+const mobileNavShowing = ref(false);
+</script>
+
 <template>
 	<div id="header-spacer"></div>
 	<div id="header">
@@ -12,7 +18,11 @@
 			<span> Programs </span>
 			<span> About Us </span>
 		</span>
-		<span id="header-nav-mobile">+</span>
+		<span id="header-nav-mobile" @click="mobileNavShowing = !mobileNavShowing">
+			<span v-show="!mobileNavShowing">+</span>
+			<span v-show="mobileNavShowing">–</span>
+		</span>
+		<FullPageNav v-if="mobileNavShowing" />
 	</div>
 </template>
 
@@ -30,6 +40,7 @@
 	justify-content: space-between;
 	align-items: center;
 	color: rgb(255, 255, 255);
+	z-index: 100;
 }
 #header-nav-desktop,
 #header-nav-mobile {
@@ -61,6 +72,7 @@
 	#header-nav-mobile {
 		display: block;
 		font-size: 30px;
+		cursor: pointer;
 	}
 	#header-nav-desktop {
 		display: none;
