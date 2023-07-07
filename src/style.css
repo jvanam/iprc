@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f9f9f9;
+}
+p {
+	margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.sidebar-content > p > a:hover, .sidebar-content > p > a:focus {
+	color: #df6add !important;
+}
+
+
+@font-face {
+    font-family: "SocialRegular";
+    src: url("assets/fonts/ABCSocial-Regular-Trial.otf");
+}
+@font-face {
+    font-family: "SocialMedium";
+    src: url("assets/fonts/ABCSocial-Medium-Trial.otf");
+}
+@font-face {
+    font-family: "SocialCondensedMedium";
+    src: url("assets/fonts/ABCSocialCondensed-Medium-Trial.otf");
+}
+@font-face {
+    font-family: "SocialCondensedBold";
+    src: url("assets/fonts/ABCSocialCondensed-Bold-Trial.otf");
+}
+@font-face {
+    font-family: "SocialMonoBook";
+    src: url("assets/fonts/ABCSocialMono-Book-Trial.otf");
+}
+@font-face {
+    font-family: "SocialMonoRegular";
+    src: url("assets/fonts/ABCSocialMono-Regular-Trial.otf");
+}
