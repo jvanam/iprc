@@ -8,7 +8,6 @@ const {
 	error,
 	refresh,
 } = useSinglePrismicDocument("global");
-console.log(document, state, error, refresh);
 </script>
 
 <template>

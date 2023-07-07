@@ -9,15 +9,36 @@ body{
     padding: 0px;
     background-color: #f9f9f9;
 }
-p {
+p, h1, h2 {
 	margin: 0px;
+}
+h1{
+    font-family: 'SocialRegular';
+    color: rgb(255, 142, 145);
+    font-size: 45px;
+    line-height: 1.1;
+}
+h2{
+    font-family: 'SocialMonoRegular';
+    color: #bb8b41;
+    font-size: 30px;
+    line-height: 1.2;
+}
+h2 a {
+    color: #97753E;
+    text-decoration: underline;
+}
+h2 a:hover, h2 a:focus {
+	color: rgb(255, 255, 255);
+    background-color: #dfd96a;
 }
 a {
     text-decoration: none;
     color: inherit;
 }
 .sidebar-content > p > a:hover, .sidebar-content > p > a:focus {
-	color: #df6add !important;
+	color: black;
+    background-color: #dfd96a;
 }
 
 
@@ -44,4 +65,16 @@ a {
 @font-face {
     font-family: "SocialMonoRegular";
     src: url("assets/fonts/ABCSocialMono-Regular-Trial.otf");
+}
+@font-face {
+    font-family: "SocialExtendedBook";
+    src: url("assets/fonts/ABCSocialExtended-Book-Trial.otf");
+}
+@font-face {
+    font-family: "GaisyrBook";
+    src: url("assets/fonts/ABCGaisyr-Book-Trial.otf");
+}
+@font-face {
+    font-family: "HALTimezone";
+    src: url("assets/fonts/HALTimezone-Regular.otf");
 }
