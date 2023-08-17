@@ -15,7 +15,7 @@ console.log(document, state, error, refresh);
 			<h1><PrismicRichText :field="document.data.headline" /></h1>
 			<div id="home-row2">
 				<div>
-					<img id="home-hero-img" src="src/assets/SVG/vector-riso.svg" />
+					<img id="home-hero-img" src="/src/assets/SVG/vector-riso.svg" />
 				</div>
 				<div id="home-subheader">
 					<h2><PrismicRichText :field="document.data.subheader" /></h2>

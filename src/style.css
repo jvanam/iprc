@@ -29,6 +29,9 @@ h2 a:hover, h2 a:focus {
 	color: rgb(255, 255, 255);
     background-color: #dfd96a;
 }
+p{
+    font-family: 'SocialMonoRegular'
+}
 a {
     text-decoration: none;
     color: inherit;
